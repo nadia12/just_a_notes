@@ -1,0 +1,12 @@
+Starting with Upstart (Ubuntu 14.04)
+
+1. Create CONF file on etc/init
+2. Configure the runlevels
+3. Check to avoid issues 'init-checkconf /etc/init/<filename>.conf'
+4. 'sudo service filename <action>' (from file conf)
+
+
+References:
+https://www.digitalocean.com/community/tutorials/how-to-configure-a-linux-service-to-start-automatically-after-a-crash-or-reboot-part-2-reference
+
+https://blog.terminal.com/getting-started-with-upstart/
