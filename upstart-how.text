@@ -6,6 +6,22 @@ Starting with Upstart (Ubuntu 14.04)
 4. 'sudo service filename <action>' (from file conf)
 
 
+example script:
+
+# MyApp
+
+description     "MyApp"
+author          "me"
+
+start on runlevel [2345]
+stop on runlevel [016]
+
+respawn
+
+exec /usr/bin/myapp 2>> /var/logs/myapp.log
+
+
+
 References:
 https://www.digitalocean.com/community/tutorials/how-to-configure-a-linux-service-to-start-automatically-after-a-crash-or-reboot-part-2-reference
 
